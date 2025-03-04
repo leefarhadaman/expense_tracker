@@ -1,16 +1,50 @@
-# expense_tracker
+# Personal Expense Tracker
 
-A new Flutter project.
+## Project Overview
+A comprehensive Flutter application for tracking personal expenses, built using Clean Architecture principles.
 
-## Getting Started
+## Features
+- Add, edit, and delete expenses
+- Categorize expenses
+- View expense summaries
+- Daily expense recording reminders
 
-This project is a starting point for a Flutter application.
+## Architecture
+- Clean Architecture
+- BLoC for State Management
+- Hive for Local Storage
+- Dependency Injection with get_it
 
-A few resources to get you started if this is your first Flutter project:
+## Prerequisites
+- Flutter SDK
+- Dart SDK
+- Android Studio / VS Code
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Setup Instructions
+1. Clone the repository
+2. Run `flutter pub get`
+3. Run `flutter pub run build_runner build`
+4. `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Testing
+- Run unit tests: `flutter test`
+- Run widget tests: `flutter test test/widget`
+
+## Project Structure
+- `lib/core/`: Core utilities and error handling
+- `lib/data/`: Data sources, models, repositories
+- `lib/domain/`: Business logic, entities, use cases
+- `lib/presentation/`: UI, BLoC, widgets
+
+## State Management
+Uses Flutter BLoC for robust and predictable state management.
+
+## Local Notifications
+Implemented using `flutter_local_notifications` package.
+
+## Contribution
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
